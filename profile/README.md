@@ -26,13 +26,13 @@ A competency graph that lives in plain YAML and works with your tooling:
 
 | Repository | Purpose |
 |---|---|
-| [sdm-site](https://github.com/spec-driven-methodology/spec-driven-methodology.github.io) | Organization site (GitHub Pages) — live examples, theme, brand |
+| [sdm-pages](https://github.com/spec-driven-methodology/spec-driven-methodology.github.io) | Organization site (GitHub Pages) — live examples, theme, brand |
 | [methodology](https://github.com/spec-driven-methodology/methodology) | Methodology concept, ADRs, specification |
 | [sdm](https://github.com/spec-driven-methodology/sdm) | Reference implementation: CLI, MCP server, npm package |
 
 ## Getting started
 
-1. Explore the [live examples](https://spec-driven-methodology.github.io/examples/java-developer-senior.html) — Java Developer → Senior, [AI Course Program](https://spec-driven-methodology.github.io/examples/ai-course.html), [Tech Conference Program](https://spec-driven-methodology.github.io/examples/tech-conference.html).
+1. Explore the [live examples](https://spec-driven-methodology.github.io/examples/) — [Java Developer → Senior](https://spec-driven-methodology.github.io/examples/java-developer-senior.html), [AI Course Program](https://spec-driven-methodology.github.io/examples/ai-course.html), [Tech Conference Program](https://spec-driven-methodology.github.io/examples/tech-conference.html).
 2. Read the methodology spec (`methodology` repo).
 3. Bootstrap a slice: ontology → profile → coverage → export.
 

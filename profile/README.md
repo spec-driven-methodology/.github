@@ -4,23 +4,36 @@
 
 **Agent-first: AI agent does the work, humans keep control.**
 
-Spec-Driven Methodology (SDM) — the methodology-as-specs approach to competency assessment and skills management. Instead of scattered job descriptions and one-off exams, SDM treats every competency as a *spec*: an ontology of skills, a content library, certification profiles, and a measurable coverage model — all versioned, all reviewable, all exportable.
+Spec-Driven Methodology (SDM) — the methodology-as-specs approach to competency assessment and skills management. SDM treats every competency as a *spec*: an ontology (nodes of any kind), certification profiles, and a measurable coverage model — all versioned, all reviewable, all exportable.
 
-![ontology → content → profiles → coverage → export](https://img.shields.io/badge/ontology-%E2%86%92%20content%20%E2%86%92%20profiles%20%E2%86%92%20coverage%20%E2%86%92%20export-cc7832)
+![Specification → Computation → Presentation](https://img.shields.io/badge/Specification-%E2%86%92%20Computation%20%E2%86%92%20Presentation-cc7832)
 
 </div>
 
 ---
 
-## What is SDM?
+## Two views
 
-A competency graph that lives in plain YAML and works with your tooling:
+| View | Question | Shape |
+|---|---|---|
+| **Layers (artifacts)** | What is the methodology made of? | Specification → Computation → Presentation |
+| **Lifecycle (usage)** | How is it executed end to end? | Human Intent → Agent + LLM → CLI / MCP / Skills → SDM → Specs YAML |
 
-- **Ontology** — skills, topics, concepts, products, persons. Every node is a spec.
-- **Content** — a library of questions, terms, and learning materials bound to the graph.
-- **Profiles** — certification profiles and levels: who needs to master what, at which depth.
-- **Coverage** — live calculation of certification coverage: green / yellow / red per skill.
-- **Export** — tests, matrices, interview kits, Mermaid graphs, Confluence pages, learning packs.
+### Layers (static)
+
+| Layer | What | Changes |
+|---|---|---|
+| **Specification** | Ontology (nodes of any `kind`: skills, questions, terms, topics...) + Profile + Gap definition | Rarely |
+| **Computation** | Coverage — gap nodes under a fixed measure | Iteratively |
+| **Presentation** | Export (tests, matrices, kits, MCP, CLI, web — delivery mechanics) | Fully open |
+
+Content (questions, terms) is **part of the ontology** — nodes with their own `kind`, not a separate layer.
+
+### Lifecycle (dynamic)
+
+> Human Intent → Agent + LLM → CLI / MCP / Skills → SDM → Specs YAML
+
+The agent clarifies the intent, plans, confirms, executes within the SDM frame, and commits the result as versioned YAML specs.
 
 ## Repositories
 
@@ -34,7 +47,7 @@ A competency graph that lives in plain YAML and works with your tooling:
 
 1. Explore the [live examples](https://spec-driven-methodology.github.io/examples/) — [Java Developer → Senior](https://spec-driven-methodology.github.io/examples/java-developer-senior.html), [AI Course Program](https://spec-driven-methodology.github.io/examples/ai-course.html), [Tech Conference Program](https://spec-driven-methodology.github.io/examples/tech-conference.html).
 2. Read the methodology spec (`methodology` repo).
-3. Bootstrap a slice: ontology → profile → coverage → export.
+3. Bootstrap a slice: ontology → profile → coverage.
 
 ---
 
